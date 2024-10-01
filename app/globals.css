@@ -4,6 +4,6 @@
 
 @layer base {
   .main {
-    @apply mt-6 w-full max-w-3xl px-6;
+    @apply my-6 w-full max-w-3xl px-6;
   }
 }
