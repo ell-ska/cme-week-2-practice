@@ -2,6 +2,7 @@ import { Albert_Sans } from 'next/font/google'
 import type { Metadata } from 'next'
 
 import { cn } from '@/utils/classnames'
+import { QueryClientProvider } from '@/providers/query-client-provider'
 import { Header } from '@/components/header'
 import './globals.css'
 
@@ -25,8 +26,10 @@ export default function RootLayout({
           'flex flex-col items-center bg-zinc-50 font-medium text-zinc-800',
         )}
       >
-        <Header />
-        {children}
+        <QueryClientProvider>
+          <Header />
+          {children}
+        </QueryClientProvider>
       </body>
     </html>
   )
