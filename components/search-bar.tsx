@@ -15,3 +15,7 @@ export const SearchBar = () => {
     </div>
   )
 }
+
+const searchResultClasses =
+  'absolute top-[calc(100%+.5rem)] flex w-full flex-col gap-2 rounded-2xl bg-white py-4 shadow-md'
+const searchResultItemClasses = 'w-full px-4 py-2 hover:bg-slate-50'
